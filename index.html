@@ -1,95 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PORTFOLIO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <style>
-    body{
-        text-align: center;
-    }
-    img{
-        width: 100px;
-        height: 100px;
-        border-radius: 30%;
-        margin: 20px auto;
-    }
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <img src="image/logo.png" class="logo">
 
-  </style>
-  <body>
-    <h1>PORTFOLIO</h1>
-    <div>
-        <ul class="nav nav-underline justify-content-center ">
-                <a href="#" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Skills</a>
-            </li>
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  
-                </a>
-              
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Educational Background</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                  
-                </ul>
-              </div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#education">EDUCATIONAL BACKGROUND</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3>MY <span>PORTFOLIO</span></h3>
+            <h1><span>Hi</span> I'm <span>A</span>nven</h1>
+            <a href="#">Hire Me</a>
+        </div>
+
+        <div class="image">
+            <img src="image/veennn.png" class="girl">
+        </div>
+
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Anven, and I am passionate about creating meaningful digital experiences. I specialize in web development and design, blending creativity with technology to bring ideas to life. When I'm not coding, you can find me exploring new technologies or enjoying the great outdoors.
+        </p>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+
+
+        <ul>
+            <li>Halimaw mag SELOS JK</li>
+            <li>HALIMAW MAG PA LAMBING JK</li>
+            <li>KUBIAN UG KAUGALINGON MOTOR</li>
+            <li>KATULGON BISAG SAKTO ANG TULOG</li>
         </ul>
     </div>
-<hr>
-    <!--Content Section-->
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2"
-    data-bs-root-margin="0px 0px-40%"
-    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p3 rounded-2" tabindex="0">
 
-<!--My Profile-->
+    <!-- Educational Background Section -->
+    <div id="education" class="section">
+        <h2>Educational Background</h2>
+        <div class="education-item">
+            <h3>PRIMARY</h3>
+            <p> Manolo Fortich Elementary School, 2009-2015</p>
+            <p>Focused on telecommunications, software engineering, and web development.</p>
+        </div>
+        <div class="education-item">
+            <h3>SECONDARY</h3>
+            <p>Manolo Fortich National High School, 2015 - 2020</p>
+        </div>
+        <div class="education-item">
+            <h3>Tertiary</h3>
+            <p>Northern Bukidnon State College</p>
+        </div>
+    </div>
+    </div>
 
-<h2 id="scrollspyHeading1">My Profile</h2>
-<img src="image.png" alt="Profile Picture">
-<p>ANVEN MOSES L. AGBULOS</p>
-<P>Age: 22</P>
-<p>Birthday: April 10, 2002</p>
-<p>Birthplace: Cagayan De Oro City</p>
-<hr>
-
-
-<!--Personal Infromation-->
-<h2 id="scrollspyHeading1">Personal Information</h2>
-<p>Address: Tankulan Manolo Fortich Bukidnon</p>
-<p>Contact: +639057895715</p>
-<p>Email: 20211515@nbsc.edu.ph</p>
-<hr>
-
-<!--About Me-->
-<h2 id="scrollspyHeading1">About Me</h2>
-<p>Nationality: Filipino</p>
-<p>Religion: Roman Catholic</p>
-<p>Civil Status: Taken UwU</p>
-<hr>    
-
-<!--Skills-->
-<h2 id="scrollspyHeading1">Skills</h2>
-<p>Maayo mangubi ug motor</p>
-<p>Halimaw mag lambing</p>
-<hr>
-
-<!--Educational Background-->
-<h2 id="scrollspyHeading1">Education Background</h2>
-<p>Primary: Manolo Fortich Elementary School (2015-2016)</p>
-<p>Secondary: Manolo Fortich National High School (2020-2021)</p>
-<p>Tertiary: Northern Bukidnon State College</p>
-<hr>
-
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
 </html>
