@@ -128,7 +128,7 @@ ul li a:hover{
     color: rgb(59,174,209);
 }
 
-/* General Section Styles */
+
 .section {
     padding: 50px 20px;
     text-align: center;
@@ -146,7 +146,6 @@ ul li a:hover{
     letter-spacing: 2px;
 }
 
-/* About Me Paragraph */
 #about p {
     font-size: 1.2em;
     color: #555;
@@ -155,7 +154,7 @@ ul li a:hover{
     margin: 0 auto;
 }
 
-/* Skills Section */
+
 #skills {
     background-color: #f4f4f4;
     padding: 50px 300px;
@@ -169,14 +168,14 @@ ul li a:hover{
     letter-spacing: 2px;
 }
 
-/* Skills List */
+
 #skills ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; /* Adds spacing between skill items */
+    gap: 15px; 
 }
 
 #skills li {
@@ -196,10 +195,10 @@ ul li a:hover{
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive Design for Small Screens */
+
 @media (max-width: 768px) {
     #skills ul {
-        gap: 10px; /* Adjust spacing for smaller screens */
+        gap: 10px; 
     }
 
     #skills li {
@@ -209,7 +208,6 @@ ul li a:hover{
 }
 
 
-/* Educational Background Styles */
 #education {
     background-color: #eaf7ff;
 }
@@ -237,4 +235,24 @@ ul li a:hover{
     font-size: 1em;
     color: #555;
     margin: 5px 0;
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    transform: translate(-50%, -150%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Avoid blocking mouse events */
+    z-index: 10;
+}
+
+.navbar ul li:hover ~ .tooltip {
+    opacity: 1;
 }
